@@ -10,8 +10,9 @@ Code overview
 
 Adapters
 --------
-file: forms.py
 
+file: forms.py
+``````````````
 - Forms (Provider for forms contained in an article)
     - interface: IForms
     - adapts: IArticle
@@ -19,13 +20,15 @@ file: forms.py
 
 Components
 ----------
-plone.belowcontentbody
 
+plone.belowcontentbody
+``````````````````````
 - raptus.article.forms
 
 Interfaces
 ----------
-file: interfaces.py
 
+file: interfaces.py
+```````````````````
 - IForms (Provider for forms contained in an article)
     - getForms - method (Returns a list of forms (catalog brains))
