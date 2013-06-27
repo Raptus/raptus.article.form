@@ -31,7 +31,6 @@ class Viewlet(ViewletBase):
     """ Viewlet showing the forms contained in the article
     """
     index = ViewPageTemplateFile('forms.pt')
-    component = "forms"
     
     @property
     @memoize
@@ -39,7 +38,7 @@ class Viewlet(ViewletBase):
         items = []
         provider = IFormsProvider(self.context)
         manageable = interfaces.IManageable(self.context)
-        items = manageable.getList(provider.getForms(), self.component)
+        items = manageable.getList(provider.getForms())
         for item in items:
             form = self.context.restrictedTraverse('%s/@@embedded' % item['id'])
             form.prefix = item['id']

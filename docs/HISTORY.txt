@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.0b5 (unreleased)
+------------------
+
+* Removed the not working show/hide functionality of raptus.article.core
+
 2.0b4 (2010-11-10)
 ------------------
 
