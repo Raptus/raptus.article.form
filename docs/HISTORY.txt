@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.0b6 (unreleased)
+2.0b6 (2014-07-14)
 ------------------
 
 - Added a new boolean field to the form folder content type to allow showing or hiding the form folder title when displaying it as a form component.
