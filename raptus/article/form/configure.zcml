@@ -22,5 +22,9 @@
       
     <adapter
       factory=".forms.Forms" />
+      
+    <adapter
+      name="raptus.article.form.FormFolderExtender"
+      factory=".extender.FormFolderSchemaExtender" />
 
 </configure>
